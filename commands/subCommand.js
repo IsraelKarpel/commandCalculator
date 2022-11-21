@@ -1,9 +1,13 @@
 class SubCommand {
 
-    constructor(value) {
-        this.value = value;
+    constructor() {
+        this.value = 0;
         this.execute = (a,b) => {return a - b };
     }
+
+    initialize(value) {
+        this.value = parseInt(value)
+      }
     
   }
   
